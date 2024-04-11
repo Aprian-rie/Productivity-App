@@ -1,7 +1,7 @@
 // ignore_for_file: prefer_const_literals_to_create_immutables, prefer_const_constructors
 
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
+import 'package:productivity_app/UI/Intray/Intray_page.dart';
 import 'models/global.dart';
 
 void main() {
@@ -46,9 +46,7 @@ class _MyHomePageState extends State<MyHomePage> {
               children: <Widget>[
                 TabBarView(
                   children: [
-                    Container(
-                      color: darkGreyColor,
-                    ),
+                    IntrayPage(), 
                     Container(
                       color: Colors.orange,
                     ),
@@ -90,6 +88,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       child: Icon(
                         Icons.add,
                         size: 80,
+                        color: Colors.white,
                       )),
                 )
               ],
